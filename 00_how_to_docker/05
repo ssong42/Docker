@@ -1,0 +1,3 @@
+docker login: "username"
+docker password: "password"
+docker run hello-world
