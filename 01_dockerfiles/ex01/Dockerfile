@@ -10,3 +10,7 @@ RUN apt-get update -y && apt-get upgrade -y && \
 	tar -xvf *.tar
 EXPOSE 9987/udp 10011 30033
 CMD ["sh", "teamspeak3-server_linux_amd64/ts3server_minimal_runscript.sh"]
+
+# docker build -t ts .
+# docker run -i -p 9987:9987/udp -p 10011:10011 -p 30033:30033 --name teamspeak ts
+# enter ip address of Char into the teamspeak client
